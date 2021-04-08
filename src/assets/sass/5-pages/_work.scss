@@ -1,0 +1,71 @@
+#work {
+    .work {
+        margin-bottom: 2rem;
+        position: relative;
+        display: flex;
+
+        &__thumbnail {
+            height: 250px;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            img {
+                height: 250px;
+                width: 100% !important;
+                background-color: $dark-blue;
+                border: 1px solid $white;
+            }
+
+            &::after {
+                display: none;
+                position: absolute;
+                content: "";
+                height: 1px;
+                background-color: $orange;
+                bottom: 1.5rem;
+                right: 0;
+                left: 0;
+
+                @include breakpoint(md) {
+                    right: -60px;
+                    left: -60px;
+                    display: block;
+                    transform: translateX(90%);
+                }
+
+                @include breakpoint(lg) {
+                    right: -80px;
+                    transform: translateX(60%);
+                }
+
+                @include breakpoint(xl) {
+                    right: -200px;
+                    left: 0;
+                    transform: translateX(50%);
+                }
+            }
+        }
+
+        &__title {
+            color: $orange;
+            margin-bottom: 1rem;
+        }
+
+        &__link {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            align-self: center;
+
+            @include breakpoint(md) {
+                margin-top: auto;
+                align-self: flex-end;
+            }
+
+            img {
+                width: 22px;
+                // width: 28px;
+                margin-left: 1rem;
+            }
+        }
+    }
+}

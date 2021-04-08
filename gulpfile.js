@@ -11,7 +11,7 @@ const paths = {
     dest: "./dist/assets/css",
   },
   scripts: {
-    src: "./src/assets/js/script.js",
+    src: "./src/assets/js/**.js",
     dest: "./dist/assets/js",
   },
   images: {

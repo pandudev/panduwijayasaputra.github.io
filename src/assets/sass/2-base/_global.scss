@@ -1,0 +1,57 @@
+html {
+    width: 100%;
+    font-size: 12px;
+
+    @include breakpoint(md) {
+        font-size: 14px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+*,
+body {
+    font-family: "Poppins" !important;
+}
+
+body {
+    position: relative;
+    background-color: $black;
+    min-height: 100vh;
+}
+
+.page {
+    padding: 80px 0 1rem;
+
+    @include breakpoint(lg) {
+        padding: 2rem 0 1rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2.625rem;
+        color: $orange;
+
+        @include breakpoint(lg) {
+            text-align: left;
+        }
+    }
+
+    &__content {
+        margin-top: 4rem;
+    }
+}
+
+#particle-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

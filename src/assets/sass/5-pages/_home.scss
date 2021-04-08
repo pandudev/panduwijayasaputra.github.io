@@ -1,0 +1,26 @@
+#home {
+
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            @include breakpoint(lg) {
+                text-align: start;
+            }
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+
+            @include breakpoint(lg) {
+                text-align: start;
+            }
+        }
+    }
+}

@@ -1,11 +1,12 @@
 {
-  "name": "boilerplate",
-  "version": "1.0.1",
-  "description": "",
+  "name": "portfolio",
+  "version": "2.0",
+  "description": "Web Developer Portfolio",
   "main": "index.js",
   "dependencies": {
     "bootstrap-4-grid": "^3.4.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "tsparticles": "^1.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

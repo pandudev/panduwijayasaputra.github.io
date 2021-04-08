@@ -1,0 +1,46 @@
+#about {
+    .avatar {
+        background-color: $dark-blue;
+        position: relative;
+        width: 300px;
+        height: 300px;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translate(20px, 20px);
+            border: 2px solid $white;
+            z-index: -1;
+        }
+    }
+
+    .skills {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: list;
+
+        li {
+            margin-bottom: 1rem;
+            flex-basis: calc(30%);
+            color: $orange;
+            padding-left: 24px;
+
+            &:before {
+                content: '-';
+                position: absolute;
+                margin-left: -24px;
+              }
+        }
+    }
+}
