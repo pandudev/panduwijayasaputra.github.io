@@ -3327,11 +3327,18 @@ p {
 #about .avatar {
   background-color: #30475e;
   position: relative;
-  width: 300px;
-  height: 300px; }
+  width: 200px;
+  height: 200px; }
   #about .avatar img {
-    width: 300px;
-    height: 300px; }
+    width: 200px;
+    height: 200px; }
+  @media (min-width: 768px) {
+    #about .avatar {
+      width: 300px;
+      height: 300px; }
+      #about .avatar img {
+        width: 300px;
+        height: 300px; } }
   #about .avatar::after {
     position: absolute;
     content: "";
@@ -3355,7 +3362,7 @@ p {
     color: #f2a365;
     padding-left: 24px; }
     #about .skills li:before {
-      content: '-';
+      content: "-";
       position: absolute;
       margin-left: -24px; }
 
