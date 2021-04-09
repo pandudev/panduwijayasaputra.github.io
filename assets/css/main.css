@@ -3330,6 +3330,10 @@ p {
   width: 200px;
   height: 200px; }
   #about .avatar img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     width: 200px;
     height: 200px; }
   @media (min-width: 768px) {
@@ -3350,6 +3354,19 @@ p {
     border: 2px solid #ececec;
     z-index: -1; }
 
+#about .links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 992px) {
+    #about .links {
+      justify-content: flex-start; } }
+  #about .links a {
+    margin: 0 1rem; }
+    #about .links a img {
+      height: 24px;
+      width: auto; }
+
 #about .skills {
   margin-top: 2rem;
   display: flex;
@@ -3367,7 +3384,7 @@ p {
       margin-left: -24px; }
 
 #work .work {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   position: relative;
   display: flex; }
   #work .work__thumbnail {
@@ -3375,6 +3392,8 @@ p {
     width: 100%;
     margin-bottom: 1rem; }
     #work .work__thumbnail img {
+      -o-object-fit: cover;
+         object-fit: cover;
       height: 250px;
       width: 100% !important;
       background-color: #30475e;
@@ -3392,21 +3411,22 @@ p {
         #work .work__thumbnail::after {
           right: -60px;
           left: -60px;
-          display: block;
-          transform: translateX(90%); } }
+          display: none;
+          transform: translateX(60%); } }
       @media (min-width: 992px) {
         #work .work__thumbnail::after {
           right: -80px;
-          transform: translateX(60%); } }
+          transform: translateX(50%); } }
       @media (min-width: 1200px) {
         #work .work__thumbnail::after {
           right: -200px;
           left: 0;
-          transform: translateX(50%); } }
+          transform: translateX(40%); } }
   #work .work__title {
     color: #f2a365;
     margin-bottom: 1rem; }
   #work .work__link {
+    display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
     align-self: center; }
@@ -3414,6 +3434,9 @@ p {
       #work .work__link {
         margin-top: auto;
         align-self: flex-end; } }
-    #work .work__link img {
-      width: 22px;
+    #work .work__link p {
+      font-style: italic; }
+    #work .work__link a {
       margin-left: 1rem; }
+      #work .work__link a img {
+        width: 22px; }
