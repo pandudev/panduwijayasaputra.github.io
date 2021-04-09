@@ -2,14 +2,24 @@
     .avatar {
         background-color: $dark-blue;
         position: relative;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
 
         img {
+            width: 200px;
+            height: 200px;
+        }
+
+        @include breakpoint(md) {
             width: 300px;
             height: 300px;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
         }
-        
+
         &::after {
             position: absolute;
             content: "";
@@ -37,10 +47,10 @@
             padding-left: 24px;
 
             &:before {
-                content: '-';
+                content: "-";
                 position: absolute;
                 margin-left: -24px;
-              }
+            }
         }
     }
 }
