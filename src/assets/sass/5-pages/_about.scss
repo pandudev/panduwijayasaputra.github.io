@@ -6,6 +6,8 @@
         height: 200px;
 
         img {
+            object-fit: cover;
+            object-position: center top;
             width: 200px;
             height: 200px;
         }
@@ -30,6 +32,24 @@
             transform: translate(20px, 20px);
             border: 2px solid $white;
             z-index: -1;
+        }
+    }
+
+    .links {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint(lg) {
+            justify-content: flex-start;
+        }
+
+        a {
+            margin: 0 1rem;
+            img {
+                height: 24px;
+                width: auto;
+            }
         }
     }
 
