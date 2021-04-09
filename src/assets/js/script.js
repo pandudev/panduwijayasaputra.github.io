@@ -3,6 +3,19 @@ const { particlesJS } = require('tsparticles');
 //jQuery
 window.$ = window.jQuery = require("jquery");
 
+$(document).ready(function(){
+$("img").click(function(){
+    $("#imagePreview").show();
+    $("#img01").attr("src", this.src);
+    $("#caption").html(this.alt);
+  })
+
+$(".close").click(function() {
+    $("#imagePreview").hide();
+}
+)
+});
+
 particlesJS("particle-js", {
     "particles": {
         "number": {
